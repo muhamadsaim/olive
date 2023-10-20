@@ -26,7 +26,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-// app.use("/", routes)
+// app.use("/", routes);
 app.use(`${base_Url}/auth`, require('./Routes/authRoutes'));
 app.use(`${base_Url}/customer`,require('./Routes/customerRoutes'))
 app.use(`${base_Url}/order`, require('./Routes/orderRoutes'))
